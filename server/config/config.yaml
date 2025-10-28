@@ -1,0 +1,40 @@
+server:
+  port: 8080
+  mode: debug    # gin运行模式: debug(调试模式), release/production(生产模式), test(测试模式)
+  domain: localhost  # 设置域名，如: example.com
+  https:
+    enabled: false    # 是否启用HTTPS
+    port: 8443        # HTTPS端口
+    cert_file: "./ssl/server.crt"  # SSL证书文件路径
+    key_file: "./ssl/server.key"   # SSL私钥文件路径
+    auto_tls: false   # 是否使用自动TLS(Let's Encrypt)
+
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: root
+  database: hgoadmin
+  charset: utf8mb4
+  max_idle_conns: 10
+  max_open_conns: 100
+  prefix: h_
+
+jwt:
+  secret: 4161q65vgfrtu5a1dfv65r4gDARGfqq[
+  expire_hours: 24
+  multi_login: true  # 是否允许多点登录
+
+redis:
+  addr: 
+  password:
+  db: 0  
+
+log:
+  level: debug
+  filename: ./logs/app.log
+  max_size: 100
+  max_age: 30
+  max_backups: 10 
+upload:  
+  upload_dir: uploads
