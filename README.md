@@ -1,5 +1,3 @@
-# hgoadmin 管理后台（Go 后端 + Vue 前端）
-
 hgoadmin 是一个前后端分离的管理后台项目。
 - 后端：使用 Golang 开发，基于 Gin 框架 + GORM，集成 Redis 做缓存处理，内置完善的中间件与 RBAC 权限体系。
 - 前端：基于开源项目 vue-manage-system 进行二次开发，采用 Vue3 + Pinia + Element Plus + TypeScript + Vite 技术栈。
@@ -122,6 +120,12 @@ npm run build
 # 预览构建
 npm run preview
 ```
+页面展示：
+
+<img width="1905" height="867" alt="1029-1" src="https://github.com/user-attachments/assets/45fc702a-2619-42d1-8416-4c4494b6c5a1" />
+<img width="1904" height="867" alt="1029-2" src="https://github.com/user-attachments/assets/38fc6d64-011c-415e-9564-cedd67a30701" />
+<img width="1891" height="880" alt="1029-3" src="https://github.com/user-attachments/assets/3891368e-bfa1-4eea-b292-53c4e5b0e7db" />
+
 
 ## 许可证
 
