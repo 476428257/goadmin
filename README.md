@@ -1,4 +1,4 @@
-hgoadmin 是一个前后端分离的管理后台项目。
+goadmin 是一个前后端分离的管理后台项目。
 - 后端：使用 Golang 开发，基于 Gin 框架 + GORM，集成 Redis 做缓存处理，内置完善的中间件与 RBAC 权限体系。
 - 前端：基于开源项目 vue-manage-system 进行二次开发，采用 Vue3 + Pinia + Element Plus + TypeScript + Vite 技术栈。
 
@@ -70,8 +70,8 @@ hgoadmin 是一个前后端分离的管理后台项目。
 
 2) 拉取代码
 ```bash
-git clone https://github.com/476428257/hgoadmin.git
-cd ./hgoadmin/server
+git clone https://github.com/476428257/goadmin.git
+cd ./goadmin/server
 ```
 
 3) 初始化数据库,sql文件夹下有sql文件
@@ -95,8 +95,8 @@ go run main.go
 ```
 - 方式 C：编译运行
 ```bash
-go build -o hgoadmin-server
-./hgoadmin-server   # Windows 在当前目录执行 hgoadmin-server.exe
+go build -o goadmin-server
+./goadmin-server   # Windows 在当前目录执行 goadmin-server.exe
 ```
 
 服务默认监听：http://localhost:8080 （可在 config.yaml 的 server.port 调整）
@@ -129,4 +129,4 @@ npm run preview
 
 ## 许可证
 
-本项目采用 MIT 许可证开源，后端与前端均可自由使用、修改与分发。欢迎提交 Issue / PR 共建 hgoadmin！
+本项目采用 MIT 许可证开源，后端与前端均可自由使用、修改与分发。欢迎提交 Issue / PR 共建 goadmin！
